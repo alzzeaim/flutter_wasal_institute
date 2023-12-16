@@ -4,7 +4,7 @@ import 'package:flutter_wasal_institute/screen/Activities_and_events/image_Detai
 import 'package:get/get.dart';
 import '../../constant/colors.dart';
 import '../../constant/text.dart';
-import '../../widget/app_bar_widget.dart';
+import '../../widget/AppBar/app_bar_widget.dart';
 
 class DetailsActivitiesAndEvents extends StatefulWidget {
   const DetailsActivitiesAndEvents({super.key});
@@ -41,10 +41,11 @@ class _DetailsActivitiesAndEventsState
                           padding: const EdgeInsets.all(1.0),
                           child: GestureDetector(
                             onTap: () {
-                          Get.to(() => ImageDetailsActivitesAndEvents);
+                              Get.to(
+                                  () => const ImageDetailsActivitesAndEvents());
                             },
                             child:
-                            Image.asset("assets/images/cc${index + 1}.png"),
+                                Image.asset("assets/images/cc${index + 1}.png"),
                           ),
                         )),
               ),
@@ -52,7 +53,7 @@ class _DetailsActivitiesAndEventsState
             const SizedBox(
               height: 20,
             ),
-            Container(
+            SizedBox(
               height: 450,
               child: SingleChildScrollView(
                 child: Column(
@@ -62,8 +63,7 @@ class _DetailsActivitiesAndEventsState
                           vertical: 5, horizontal: 10),
                       child: Text(MyText.splash3,
                           textAlign: TextAlign.end,
-                          style: Theme.of(context).textTheme.titleLarge
-                          ),
+                          style: Theme.of(context).textTheme.titleLarge),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
@@ -77,8 +77,7 @@ class _DetailsActivitiesAndEventsState
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium
-                                    ?.copyWith(fontSize: 12)
-                                ),
+                                    ?.copyWith(fontSize: 12)),
                           ),
                         ],
                       ),

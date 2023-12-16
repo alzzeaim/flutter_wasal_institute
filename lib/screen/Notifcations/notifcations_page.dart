@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/constant/colors.dart';
-import 'package:flutter_wasal_institute/widget/app_bar_widget.dart';
+import 'package:flutter_wasal_institute/widget/AppBar/app_bar_widget.dart';
 import 'package:get/get.dart';
 
 import 'notifcations-widget.dart';

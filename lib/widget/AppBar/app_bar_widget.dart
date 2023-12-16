@@ -7,10 +7,10 @@ import 'package:flutter_wasal_institute/screen/profail/profail_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-import '../constant/colors.dart';
-import '../constant/padding.dart';
-import '../constant/text.dart';
-import '../constant/text_style.dart';
+import '../../constant/colors.dart';
+import '../../constant/padding.dart';
+import '../../constant/text.dart';
+import '../../constant/text_style.dart';
 
 class AppBarWidget {
   static AppBar appBarwidgetHome({

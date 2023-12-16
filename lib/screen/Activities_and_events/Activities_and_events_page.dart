@@ -3,9 +3,9 @@ import 'package:flutter_wasal_institute/constant/images.dart';
 import 'package:get/get.dart';
 import '../../constant/colors.dart';
 import '../../constant/text.dart';
-import '../../widget/app_bar_widget.dart';
-import '../../widget/top_scroller_widget.dart';
-import '../../widget/top_search_widget.dart';
+import '../../widget/AppBar/app_bar_widget.dart';
+import '../../widget/AppBar/top_scroller_widget.dart';
+import '../../widget/AppBar/top_search_widget.dart';
 import 'CatogrisOfActivitiesWidget.dart';
 
 class ActivitiesAndEvents extends StatefulWidget {

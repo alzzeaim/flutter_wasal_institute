@@ -6,6 +6,7 @@ import 'package:flutter_wasal_institute/screen/OffersAndSurprises/Offers_and_sur
 import 'package:flutter_wasal_institute/screen/CaderJats/cader_page.dart';
 import 'package:flutter_wasal_institute/screen/ContactInformation/contact_information_page.dart';
 import 'package:flutter_wasal_institute/screen/courses/courses_page.dart';
+import 'package:flutter_wasal_institute/screen/courses/courses_page1.dart';
 import 'package:flutter_wasal_institute/screen/home_pages/home_firist_page.dart';
 import 'package:flutter_wasal_institute/screen/next_hup.dart';
 import 'package:get/get.dart';
@@ -48,17 +49,17 @@ class DrawerWidget {
         'name': "كادرالاكاديمية",
         'icon': Icons.perm_contact_cal_outlined,
         'fun': () {
-          Get.to(() => CaderPage());
+          Get.to(() => const CaderPage());
         }
       },
-      // {
-      //   // CallUs
-      //   'name': "الدورات الجديدة",
-      //   'icon': Icons.perm_contact_cal_outlined,
-      //   'fun': () {
-      //     Get.to(() =>  CoursesPage());
-      //   }
-      // },
+      {
+        // CallUs
+        'name': "الدورات الجديدة",
+        'icon': Icons.perm_contact_cal_outlined,
+        'fun': () {
+          Get.to(() => const CoursesPage());
+        }
+      },
       {
         // CallUs
         'name': "العروض والمفاجأت",

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/constant/images.dart';
-import 'package:flutter_wasal_institute/widget/app_bar_widget.dart';
+import 'package:flutter_wasal_institute/widget/AppBar/app_bar_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 

@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import '../../constant/colors.dart';
 import '../../constant/text.dart';
-import '../../widget/app_bar_widget.dart';
+import '../../widget/AppBar/app_bar_widget.dart';
 import '../home_pages/home_firist_page.dart';
 
 class AboutUsPage extends StatefulWidget {

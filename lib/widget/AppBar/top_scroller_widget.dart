@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../constant/text.dart';
-import 'cader_widget/scrole_of_itemIn_top_bar_widget.dart';
+import '../../constant/text.dart';
+import 'scrole_of_itemIn_top_bar_widget.dart';
 
 class TopScroller extends StatelessWidget {
   TopScroller({
@@ -28,7 +28,7 @@ class TopScroller extends StatelessWidget {
         itemCount: map_item.length,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
-          return ScroleOfItemInTopBar(
+          return ScroleOfItemInTopBarWidget(
             text1: map_item[index]["text"],
           );
         },

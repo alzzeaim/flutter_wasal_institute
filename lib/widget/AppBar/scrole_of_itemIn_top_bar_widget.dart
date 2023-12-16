@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../constant/colors.dart';
 import '../../constant/size.dart';
 
-class ScroleOfItemInTopBar extends StatelessWidget {
+class ScroleOfItemInTopBarWidget extends StatelessWidget {
   String text1;
-  ScroleOfItemInTopBar({super.key, required this.text1});
+  ScroleOfItemInTopBarWidget({super.key, required this.text1});
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +22,7 @@ class ScroleOfItemInTopBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            // IconButton(
-            //     onPressed: () {},
-            //     icon: Icon(
-            //       Icons.add_circle_outline,
-            //       size: 16,
-            //     )),
+           
             Text(text1, style: Theme.of(context).textTheme.bodyLarge)
           ],
         ),

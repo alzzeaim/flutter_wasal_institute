@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wasal_institute/controller/coursesController/courses_controller.dart';
 import 'package:flutter_wasal_institute/screen/courses/Register_for_the_course_page.dart';
-import 'package:flutter_wasal_institute/screen/courses/information_of_course.dart';
+import 'package:flutter_wasal_institute/screen/courses/information_of_course_page.dart';
 import 'package:get/get.dart';
 
 import '../../constant/colors.dart';
+import '../../controller/coutses_controller.dart';
 
 class CatogreOfCourses1Widget extends StatelessWidget {
   CourseModel courseModel;
@@ -27,12 +27,12 @@ class CatogreOfCourses1Widget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.to(() => const InformationOfCourse());
+        Get.to(() => const InformationOfCoursePage());
       },
       child: Container(
         margin: const EdgeInsets.only(bottom: 15),
         width: 270,
-        height: 390,
+        height: 400,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: MyColors.search_backgraund,
@@ -157,38 +157,43 @@ class CatogreOfCourses1Widget extends StatelessWidget {
               ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // Padding(
+                //   padding: const EdgeInsets.only(left: 15),
+                //   child: Text(
+                //     "المزيد من التفاصيل ",
+                //     style: Theme.of(context).textTheme.bodyMedium,
+                //   ),
+                // ),
+                // const SizedBox(
+                //   width: 30,
+                // ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15),
-                  child: Text(
-                    "المزيد من التفاصيل ",
-                    style: Theme.of(context).textTheme.bodyMedium,
+                  padding: const EdgeInsets.only(
+                    left: 10,
                   ),
-                ),
-                const SizedBox(
-                  width: 30,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Get.to(() => const RegisterForTheCoursePage());
-                  },
-                  child: Container(
-                    margin: const EdgeInsets.only(
-                      right: 10,
-                    ),
-                    width: 120,
-                    height: 40,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: MyColors.MyAction),
-                    child: Center(
-                      child: Text(
-                        "تسجيل في الدورة",
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyMedium
-                            ?.copyWith(color: Colors.white),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.to(() => const RegisterForTheCoursePage());
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.only(
+                        right: 10,
+                      ),
+                      width: 250,
+                      height: 40,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: MyColors.MyAction),
+                      child: Center(
+                        child: Text(
+                          "تسجيل في الدورة",
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(color: Colors.white),
+                        ),
                       ),
                     ),
                   ),

@@ -4,9 +4,17 @@ import 'package:flutter_wasal_institute/widget/cader_widget/social_media_sites_w
 
 import '../../constant/colors.dart';
 
-class Tetsher extends StatelessWidget {
-  const Tetsher({
+class TetsherWiget extends StatelessWidget {
+  String url;
+  String name;
+  String jop;
+  String depart;
+  TetsherWiget({
     super.key,
+    required this.url,
+    required this.name,
+    required this.jop,
+    required this.depart,
   });
 
   @override
@@ -15,7 +23,7 @@ class Tetsher extends StatelessWidget {
       children: [
         Container(
           height: 243,
-          margin: EdgeInsets.only(
+          margin: const EdgeInsets.only(
             top: 10,
           ),
           decoration: BoxDecoration(
@@ -26,16 +34,17 @@ class Tetsher extends StatelessWidget {
             ),
           ),
           child: Container(
-            margin: EdgeInsets.only(
+            margin: const EdgeInsets.only(
               left: 18,
             ),
             height: 229,
+            width: 229,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(
-                    imageMeneger.ellips5,
-                  ),
-                ),
+                    image: AssetImage(
+                      url,
+                    ),
+                    fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(300)),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -54,21 +63,15 @@ class Tetsher extends StatelessWidget {
             ),
           ),
         ),
-        Text("محمد اليمني", style: Theme.of(context).textTheme.titleLarge
-            
-            ),
-        Text("مصمم جرافيكس",
+        Text(name, style: Theme.of(context).textTheme.titleLarge),
+        Text(jop,
             style: Theme.of(context)
                 .textTheme
                 .headlineLarge
-                ?.copyWith(color: MyColors.MyAction)
-
-            ),
-        Text("الجرافيكس والملتيميديا",
+                ?.copyWith(color: MyColors.MyAction)),
+        Text(depart,
             style:
-                Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 14)
-         
-            ),
+                Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 14)),
       ],
     );
   }

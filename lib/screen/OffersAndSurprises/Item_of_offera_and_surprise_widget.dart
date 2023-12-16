@@ -1,70 +1,75 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../constant/colors.dart';
-import 'Details_activities_and_events.dart';
+import 'Details_of_offers_and_surprises.dart';
 
-class CatogrisOfActivitiesWidget extends StatelessWidget {
+class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
+  String title;
+  String depart;
   String url;
-  String titel;
-  String date;
-  CatogrisOfActivitiesWidget({
+   ItemOfOfferaAndSurpriseWidget({
     super.key,
+    required this.title,
+    required this.depart,
     required this.url,
-    required this.date,
-    required this.titel,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.to(() => const DetailsActivitiesAndEvents());
+        Get.to(() => DetailsOfOffersAndSurprises());
       },
       child: Container(
-        margin: const EdgeInsets.all(20),
+        margin: EdgeInsets.symmetric(
+          vertical: 10,
+          horizontal: 20,
+        ),
         width: double.infinity,
         decoration: BoxDecoration(
-          color: MyColors.item_of_cader,
-          borderRadius: BorderRadius.circular(20),
-        ),
+            color: MyColors.MyBackGroundTapBar,
+            borderRadius: BorderRadius.circular(20)),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
               width: double.infinity,
-              height: 210,
+              height: 300,
               decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                  ),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20)),
                   image: DecorationImage(
                       image: AssetImage(url), fit: BoxFit.cover)),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
-              child: Text(titel,
+              child: Text(title,
                   textAlign: TextAlign.end,
-                  style: Theme.of(context).textTheme.headlineLarge),
+                  style: Theme.of(context).textTheme.titleLarge),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10, bottom: 15),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Expanded(
-                    child: Text(date,
-                        textAlign: TextAlign.end,
-                        style: Theme.of(context).textTheme.bodyMedium),
-                  ),
+                  Text(depart,
+                      textAlign: TextAlign.end,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12)),
                 ],
               ),
             ),
             GestureDetector(
               onTap: () {
-                Get.to(() => const DetailsActivitiesAndEvents());
+                Get.to(() => DetailsOfOffersAndSurprises());
               },
               child: Container(
-                margin: const EdgeInsets.only(top: 20, bottom: 20),
+                margin: EdgeInsets.only(top: 25, bottom: 20),
                 width: 348,
                 height: 40,
                 decoration: BoxDecoration(
@@ -74,13 +79,16 @@ class CatogrisOfActivitiesWidget extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.chevron_left_rounded,
                       color: MyColors.whiteColor,
                       size: 24,
                     ),
                     Text("قراءة المزيد",
-                        style: Theme.of(context).textTheme.labelLarge),
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyLarge
+                            ?.copyWith(color: Colors.white)),
                   ],
                 ),
               ),

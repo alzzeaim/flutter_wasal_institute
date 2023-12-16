@@ -10,11 +10,11 @@ class imageMeneger {
   static String splash2 = '$pathimage/splash2.png';
   static String splash3 = '$pathimage/splash3.png';
   static String splash4 = '$pathimage/splash4.png';
-  static String ellips1 = '$pathimage/el1.png';
-  static String ellips2 = '$pathimage/el2.png';
-  static String ellips3 = '$pathimage/el3.png';
-  static String ellips5 = '$pathimage/el5.png';
-  static String ellips4 = '$pathimage/wl4.png';
+  static String Teacher1 = '$pathimage/Teacher1.jpg';
+  static String Teacher2 = '$pathimage/Teacher2.jpg';
+  static String Teacher3 = '$pathimage/Teacher3.jpg';
+  static String Teacher4 = '$pathimage/Teacher4.jpg';
+  static String Teacher5 = '$pathimage/Teacher5.jpg';
   static String facebook = '$pathimage/vect2.png';
   static String Instagram = '$pathimage/vect3.png';
   static String twiter = '$pathimage/vect1.png';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wasal_institute/getxLap/sneckbar.dart';
-import 'package:flutter_wasal_institute/screen/splash/splash.dart';
+import 'package:flutter_wasal_institute/screen/courses/courses_page1.dart';
+import 'package:flutter_wasal_institute/screen/home_pages/home_firist_page.dart';
 import 'package:get/get.dart';
 
 import 'constant/theme.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: Themes.customLightTheme,
-      home: cour(),
+      home: const HomeFristPage(),
     );
   }
 }
