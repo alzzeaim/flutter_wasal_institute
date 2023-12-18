@@ -9,7 +9,7 @@ class TitleAndViweAllHomeWidget extends StatelessWidget {
   TitleAndViweAllHomeWidget({
     super.key,
     required this.title,
-    required this.nextPage,
+    required this.nextPage, TextStyle? style,
   });
 
   @override

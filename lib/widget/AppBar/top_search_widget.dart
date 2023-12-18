@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constant/colors.dart';
-import '../../constant/padding.dart';
-import '../../constant/size.dart';
+
 import '../../constant/text.dart';
 
 class TopSearchWidget extends StatelessWidget {
@@ -17,13 +16,12 @@ class TopSearchWidget extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            margin:
-                EdgeInsets.only(right: AppSize.z5, top: AppSize.z15, left: 10),
-            width: AppSize.z50,
-            height: AppSize.z50,
+            margin: const EdgeInsets.only(right: 5, top: 15, left: 10),
+            width: 50,
+            height: 50,
             decoration: BoxDecoration(
-              color: MyColors.search_backgraund,
-              borderRadius: BorderRadius.circular(AppSize.z10),
+              color: MyColors.item_of_cader,
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(
               Icons.search_rounded,
@@ -31,15 +29,15 @@ class TopSearchWidget extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(
-              top: AppSize.z15,
+            margin: const EdgeInsets.only(
+              top: 15,
             ),
-            width: AppSize.z320,
-            height: AppSize.z50,
+            width: 320,
+            height: 50,
             decoration: BoxDecoration(
                 border: Border.all(color: MyColors.whiteColor),
-                color: MyColors.search_backgraund,
-                borderRadius: BorderRadius.circular(AppSize.z15)),
+                color: MyColors.item_of_cader,
+                borderRadius: BorderRadius.circular(15)),
             child: Row(
               // mainAxisAlignment: MainAxisAlignment.end,
 
@@ -54,15 +52,15 @@ class TopSearchWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: AppSize.z10,
+                const SizedBox(
+                  width: 10,
                 ),
                 Icon(
                   Icons.search,
                   color: MyColors.black_halufe_Color,
                 ),
-                SizedBox(
-                  width: AppSize.z10,
+                const SizedBox(
+                  width: 10,
                 )
               ],
             ),

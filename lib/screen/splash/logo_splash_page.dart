@@ -5,6 +5,7 @@ import 'package:flutter_wasal_institute/constant/text.dart';
 import 'package:flutter_wasal_institute/constant/text_style.dart';
 import 'package:flutter_wasal_institute/screen/home_pages/home_firist_page.dart';
 import 'package:flutter_wasal_institute/screen/login_sgin/login_page.dart';
+import 'package:get/get.dart';
 
 class LogoSplashPage extends StatefulWidget {
   const LogoSplashPage({super.key});
@@ -70,11 +71,7 @@ class _LogoSplashPageState extends State<LogoSplashPage> {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => HomeFristPage(),
-                  ),
-                );
+                Get.to(() => HomeFristPage());
               },
               child: Container(
                 margin: EdgeInsets.symmetric(

@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/constant/colors.dart';
-import 'package:flutter_wasal_institute/constant/images.dart';
-import 'package:flutter_wasal_institute/constant/text.dart';
-import 'package:flutter_wasal_institute/constant/text_style.dart';
-import 'package:flutter_wasal_institute/screen/splash/logo_splash_page.dart';
-import 'package:flutter_wasal_institute/screen/splash/splash_widget.dart';
+
 import 'package:get/get.dart';
 
+import '../../constant/text.dart';
 import '../home_pages/home_firist_page.dart';
 import '../login_sgin/login_page.dart';
 

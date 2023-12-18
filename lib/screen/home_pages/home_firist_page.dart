@@ -71,12 +71,14 @@ class _HomeFristPageState extends State<HomeFristPage> {
             ),
             // New courses
             TitleAndViweAllHomeWidget(
-                nextPage: () {
-                  Get.to(() => const CoursesPage());
-                },
-                title: "الكورسات الجديدة"),
+              nextPage: () {
+                Get.to(() => const CoursesPage());
+              },
+              title: "الكورسات الجديدة",
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
             SizedBox(
-              height: 415,
+              height: 450,
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -131,8 +133,18 @@ class _HomeFristPageState extends State<HomeFristPage> {
               ),
             ),
             //  cader
+            Divider(
+                color: MyColors.black_halufe_Color.withOpacity(0.1),
+                endIndent: 10,
+                height: 15,
+                indent: 10,
+                thickness: 1),
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 20,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -164,6 +176,12 @@ class _HomeFristPageState extends State<HomeFristPage> {
                 ),
               ],
             ),
+            Divider(
+                color: MyColors.black_halufe_Color.withOpacity(0.1),
+                endIndent: 10,
+                height: 15,
+                indent: 10,
+                thickness: 1),
             //Activities_and_events_page
             TitleAndViweAllHomeWidget(
                 title: "الانشطة والفعاليات",

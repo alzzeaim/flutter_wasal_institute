@@ -5,15 +5,10 @@ import 'package:flutter_wasal_institute/screen/Activities_and_events/Activities_
 import 'package:flutter_wasal_institute/screen/OffersAndSurprises/Offers_and_surprises_page.dart';
 import 'package:flutter_wasal_institute/screen/CaderJats/cader_page.dart';
 import 'package:flutter_wasal_institute/screen/ContactInformation/contact_information_page.dart';
-import 'package:flutter_wasal_institute/screen/courses/courses_page.dart';
 import 'package:flutter_wasal_institute/screen/courses/courses_page1.dart';
 import 'package:flutter_wasal_institute/screen/home_pages/home_firist_page.dart';
-import 'package:flutter_wasal_institute/screen/next_hup.dart';
 import 'package:get/get.dart';
-
 import '../../constant/colors.dart';
-import '../../constant/padding.dart';
-import '../../constant/size.dart';
 import '../../screen/AcademyDepartments/academy_departments_page.dart';
 import 'list_tile_menu.dart';
 
@@ -103,17 +98,17 @@ class DrawerWidget {
     ];
     return Drawer(
       child: Container(
-        height: AppSize.z400,
+        height:400,
         color: MyColors.whiteColor,
         child: ListView(
           children: [
             DrawerHeader(
               child: Center(
                 child: Container(
-                    padding: EdgeInsets.all(AppPadding.p10),
+                    padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                         color: MyColors.whiteColor,
-                        borderRadius: BorderRadius.circular(AppSize.z10)),
+                        borderRadius: BorderRadius.circular(10)),
                     child: Image(image: AssetImage(imageMeneger.logo22))),
               ),
             ),

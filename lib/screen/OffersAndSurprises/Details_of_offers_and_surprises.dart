@@ -80,12 +80,7 @@ class _DetailsOfOffersAndSurprisesState
                                     .textTheme
                                     .bodyMedium
                                     ?.copyWith(fontSize: 12)
-                                // TextStyle(
-                                //   color: MyColors.black_halufe_Color,
-                                //   fontFamily: 'cairo',
-                                //   fontSize: 12,
-                                //   fontWeight: FontWeight.w600,
-                                // ),
+                                
                                 ),
                           ),
                         ],

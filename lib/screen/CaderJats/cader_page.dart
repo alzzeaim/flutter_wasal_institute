@@ -6,8 +6,8 @@ import 'package:flutter_wasal_institute/widget/AppBar/app_bar_widget.dart';
 import 'package:flutter_wasal_institute/widget/AppBar/top_search_widget.dart';
 import 'package:get/get.dart';
 import '../../widget/DrawerWidget/drawer_widget.dart';
-import '../../widget/cader_widget/tetsher_widget.dart';
 import '../../widget/AppBar/top_scroller_widget.dart';
+import 'cader-itme_widget.dart';
 
 class CaderPage extends StatefulWidget {
   const CaderPage({super.key});
@@ -35,34 +35,37 @@ class _CaderPageState extends State<CaderPage> {
             const TopSearchWidget(),
             TopScroller(),
             Expanded(
-              child: ListView(
-                children: [
-                  TetsherWiget(
-                      url: imageMeneger.Teacher4,
-                      name: "محمد اليمني",
-                      jop: "مصمم جرافيكس",
-                      depart: "الجرافيكس والملتيميديا"),
-                  TetsherWiget(
-                      url: imageMeneger.Teacher3,
-                      name: " سعاد قاسم",
-                      jop: "مصمم جرافيكس",
-                      depart: "الجرافيكس والملتيميديا"),
-                  TetsherWiget(
-                      url: imageMeneger.Teacher2,
-                      name: " امة الرحمن المجمر",
-                      jop: "مصمم جرافيكس",
-                      depart: "الجرافيكس والملتيميديا"),
-                  TetsherWiget(
-                      url: imageMeneger.Teacher1,
-                      name: " عبلة عنتر",
-                      jop: "مصمم جرافيكس",
-                      depart: "الجرافيكس والملتيميديا"),
-                  TetsherWiget(
-                      url: imageMeneger.Teacher5,
-                      name: " عبير الشبكات",
-                      jop: "مصمم جرافيكس",
-                      depart: "الجرافيكس والملتيميديا"),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 20),
+                child: ListView(
+                  children: [
+                    CaderItmeWiget(
+                        url: imageMeneger.Teacher4,
+                        name: "محمد اليمني",
+                        jop: "مصمم جرافيكس",
+                        depart: "الجرافيكس والملتيميديا"),
+                    CaderItmeWiget(
+                        url: imageMeneger.Teacher3,
+                        name: " سعاد قاسم",
+                        jop: "مصمم جرافيكس",
+                        depart: "الجرافيكس والملتيميديا"),
+                    CaderItmeWiget(
+                        url: imageMeneger.Teacher2,
+                        name: " امة الرحمن المجمر",
+                        jop: "مصمم جرافيكس",
+                        depart: "الجرافيكس والملتيميديا"),
+                    CaderItmeWiget(
+                        url: imageMeneger.Teacher1,
+                        name: " عبلة عنتر",
+                        jop: "مصمم جرافيكس",
+                        depart: "الجرافيكس والملتيميديا"),
+                    CaderItmeWiget(
+                        url: imageMeneger.Teacher5,
+                        name: " عبير الشبكات",
+                        jop: "مصمم جرافيكس",
+                        depart: "الجرافيكس والملتيميديا"),
+                  ],
+                ),
               ),
             )
           ],

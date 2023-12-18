@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-
 import '../../constant/colors.dart';
-import '../../constant/padding.dart';
-import '../../constant/size.dart';
-
 
 
 class ListTileMenu extends StatelessWidget {
@@ -22,13 +18,13 @@ class ListTileMenu extends StatelessWidget {
     return ListTile(
       trailing: Padding(
         padding: EdgeInsets.only(
-          right: AppPadding.p20,
-          top: AppPadding.p5,
+          right: 20,
+          top: 5,
         ),
         child: Icon(
           iconMenu,
           color: MyColors.black_halufe_Color,
-          size: AppSize.z24,
+          size: 24,
         ),
       ),
       title: Text(titleitem_menu,

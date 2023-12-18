@@ -3,7 +3,6 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import '../../constant/colors.dart';
 import '../../widget/AppBar/app_bar_widget.dart';
-import '../home_pages/home_firist_page.dart';
 
 class ImageDetailsActivitesAndEvents extends StatefulWidget {
   const ImageDetailsActivitesAndEvents({super.key});

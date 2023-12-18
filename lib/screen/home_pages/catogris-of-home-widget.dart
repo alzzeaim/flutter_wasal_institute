@@ -36,7 +36,19 @@ class CatogrisOfHomeWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(title, style: Theme.of(context).textTheme.bodyLarge),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(title,
+                      maxLines: 2,
+                      style: const TextStyle(
+                        fontFamily: 'Cairo',
+                        fontSize: 10,
+                        color: Colors.black,
+                        fontWeight: FontWeight.normal,
+                      )
+                      //  Theme.of(context).textTheme.bodyLarge
+                      ),
+                ),
                 const SizedBox(
                   width: 10,
                 ),

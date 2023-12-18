@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wasal_institute/screen/courses/courses_page1.dart';
 import 'package:flutter_wasal_institute/screen/home_pages/home_firist_page.dart';
+import 'package:flutter_wasal_institute/screen/splash/splash.dart';
 import 'package:get/get.dart';
 
 import 'constant/theme.dart';
@@ -16,18 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+          child: child!),
       title: 'Flutter Demo',
       theme: Themes.customLightTheme,
-      home: const HomeFristPage(),
+      home: const SplashPages(),
     );
   }
 }
-
-// GestureDetector
-//                 nextPage: () {
-//                   Navigator.of(context).push(
-//                     MaterialPageRoute(
-//                       builder: (context) => NextVideo(),
-//                     ),
-//                   );
-//                 },

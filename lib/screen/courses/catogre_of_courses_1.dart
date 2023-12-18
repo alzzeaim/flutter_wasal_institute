@@ -32,7 +32,7 @@ class CatogreOfCourses1Widget extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(bottom: 15),
         width: 270,
-        height: 400,
+        height: 420,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           color: MyColors.search_backgraund,
@@ -66,10 +66,11 @@ class CatogreOfCourses1Widget extends StatelessWidget {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.end,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium
-                              ?.copyWith(color: MyColors.black_color),
+                          style:
+                              Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                    color: MyColors.black_color,
+                                    fontSize: 14,
+                                  ),
                         ),
                       ),
                     ],
@@ -85,7 +86,10 @@ class CatogreOfCourses1Widget extends StatelessWidget {
                         child: Text(
                           courseModel.depart,
                           textAlign: TextAlign.end,
-                          style: Theme.of(context).textTheme.bodyMedium,
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(fontSize: 12),
                         ),
                       ),
                     ],
@@ -108,11 +112,17 @@ class CatogreOfCourses1Widget extends StatelessWidget {
                           children: [
                             Text(
                               " ر.ي",
-                              style: Theme.of(context).textTheme.bodySmall,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodySmall
+                                  ?.copyWith(fontSize: 12),
                             ),
                             Text(
                               courseModel.costs,
-                              style: Theme.of(context).textTheme.bodyMedium,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyMedium
+                                  ?.copyWith(fontSize: 12),
                             ),
                             const SizedBox(
                               width: 5,
@@ -132,11 +142,17 @@ class CatogreOfCourses1Widget extends StatelessWidget {
                         children: [
                           Text(
                             " ساعة",
-                            style: Theme.of(context).textTheme.bodyMedium,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(fontSize: 12),
                           ),
                           Text(
                             courseModel.time,
-                            style: Theme.of(context).textTheme.bodyMedium,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(fontSize: 12),
                           ),
                           const SizedBox(
                             width: 5,
@@ -192,7 +208,8 @@ class CatogreOfCourses1Widget extends StatelessWidget {
                           style: Theme.of(context)
                               .textTheme
                               .bodyMedium
-                              ?.copyWith(color: Colors.white),
+                              ?.copyWith(fontSize: 14)
+                              .copyWith(color: Colors.white),
                         ),
                       ),
                     ),

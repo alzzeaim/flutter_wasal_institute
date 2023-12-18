@@ -30,7 +30,6 @@ class Button1 extends StatelessWidget {
                     .textTheme
                     .titleLarge
                     ?.copyWith(color: Colors.white)
-                //  MyTextStyle.s_logo_splash_button1_1_
                 ),
           ),
         ),

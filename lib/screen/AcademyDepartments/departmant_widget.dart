@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/screen/courses/courses_page1.dart';
 import 'package:get/get.dart';
 
+import '../../constant/colors.dart';
+
 class DepartmantWidget extends StatelessWidget {
   String title;
   String numberOfCourses;
@@ -46,7 +48,10 @@ class DepartmantWidget extends StatelessWidget {
                   const SizedBox(
                     width: 5,
                   ),
-                  const Icon(Icons.menu_book_rounded),
+                  Icon(
+                    Icons.cast_for_education_rounded,
+                    color: MyColors.black_halufe_Color,
+                  ),
                   // FaIcon(FontAwesomeIcons.book)
                   const Spacer(),
                   Text(title)

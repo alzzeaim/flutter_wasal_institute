@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/constant/colors.dart';
 import 'package:flutter_wasal_institute/constant/images.dart';
 import 'package:flutter_wasal_institute/constant/text.dart';
-import 'package:flutter_wasal_institute/screen/splash/logo_splash_page.dart';
 import 'package:flutter_wasal_institute/screen/splash/splash1_page.dart';
 import 'package:flutter_wasal_institute/screen/splash/splash_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

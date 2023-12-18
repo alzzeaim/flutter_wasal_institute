@@ -1,16 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_wasal_institute/constant/images.dart';
-import 'package:flutter_wasal_institute/constant/size.dart';
 import 'package:flutter_wasal_institute/screen/profail/profail_page.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-
 import '../../constant/colors.dart';
-import '../../constant/padding.dart';
-import '../../constant/text.dart';
-import '../../constant/text_style.dart';
 
 class AppBarWidget {
   static AppBar appBarwidgetHome({
@@ -63,12 +54,10 @@ class AppBarWidget {
                     width: 1,
                   ),
                   borderRadius: BorderRadius.circular(
-                    AppSize.z50,
+                    50,
                   ),
 
-                  // image: DecorationImage(
-                  //   image: AssetImage(URLImageProfail ?? imageMeneger.userDefolt),
-                  // ),
+                 
                 ),
                 child: Icon(
                   Icons.person,
@@ -95,9 +84,7 @@ class AppBarWidget {
         child: Text(
           Title,
 
-          // textAlign: TextAlign.center,
           style: Theme.of(cont).textTheme.headlineLarge,
-          // MyTextStyle.s_title_app_bar_22_
         ),
       ),
       leading: SizedBox(),
@@ -108,8 +95,7 @@ class AppBarWidget {
           },
           child: Padding(
             padding: EdgeInsets.only(
-              right: AppPadding.p15,
-              // top: AppPadding.p15,
+              right: 15,
             ),
             child: Icon(
               Icons.chevron_right_rounded,

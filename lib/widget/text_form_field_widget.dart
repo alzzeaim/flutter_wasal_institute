@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/constant/colors.dart';
 
-import '../constant/text.dart';
-import '../constant/text_style.dart';
-
 class TextFormFieldwidget extends StatelessWidget {
   // bool isNew;
   String hint;

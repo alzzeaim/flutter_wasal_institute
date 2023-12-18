@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_wasal_institute/constant/colors.dart';
 import 'package:flutter_wasal_institute/constant/images.dart';
 import 'package:flutter_wasal_institute/constant/text.dart';
+import 'package:flutter_wasal_institute/widget/AppBar/app_bar_widget.dart';
+import 'package:get/get.dart';
 import '../../widget/text_form_field_widget.dart';
 
 class RegisterForTheCoursePage extends StatefulWidget {
@@ -26,6 +28,12 @@ class _RegisterForTheCoursePageState extends State<RegisterForTheCoursePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: MyColors.MyBackGround,
+      appBar: AppBarWidget.appBarWidgetTitle(
+          cont: context,
+          Title: "",
+          backPage: () {
+            Get.back();
+          }),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -141,20 +149,25 @@ class _RegisterForTheCoursePageState extends State<RegisterForTheCoursePage> {
                 ],
               ),
               Center(
-                child: Container(
-                  margin: const EdgeInsets.only(top: 60),
-                  width: 250,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: MyColors.MyAction,
-                  ),
-                  child: Center(
-                    child: Text("تسجيل",
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineLarge
-                            ?.copyWith(color: Colors.white)),
+                child: GestureDetector(
+                  onTap: () {
+                    Get.back();
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 60),
+                    width: 250,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: MyColors.MyAction,
+                    ),
+                    child: Center(
+                      child: Text("تسجيل",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineLarge
+                              ?.copyWith(color: Colors.white)),
+                    ),
                   ),
                 ),
               )

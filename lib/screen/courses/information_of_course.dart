@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_wasal_institute/constant/colors.dart';
 import 'package:flutter_wasal_institute/constant/images.dart';
 import 'package:flutter_wasal_institute/constant/text.dart';
 
@@ -31,12 +30,12 @@ class InformationOfCourseWidget extends StatelessWidget {
               style: Theme.of(context).textTheme.titleLarge),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 0, right: 10, top: 10),
+          padding: const EdgeInsets.only(left: 0, right: 15, top: 15),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 25),
+                padding: const EdgeInsets.only(left: 35),
                 child: Row(
                   children: [
                     Text(
@@ -65,9 +64,9 @@ class InformationOfCourseWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
-                width: 50,
-              ),
+              // const SizedBox(
+              //   width: 50,
+              // ),
               Row(
                 children: [
                   Text(
@@ -99,12 +98,12 @@ class InformationOfCourseWidget extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 0, right: 10, top: 10),
+          padding: const EdgeInsets.only(left: 0, right: 15, top: 15),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: 15),
                 child: Row(
                   children: [
                     Text(
@@ -129,37 +128,44 @@ class InformationOfCourseWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
-                width: 50,
-              ),
-              Row(
-                children: [
-                  Text(
-                    informationCourseModel.date,
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    'تاريخ الدورة',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  const Icon(
-                    Icons.watch_later_outlined,
-                    color: Colors.green,
-                    size: 20,
-                  ),
-                ],
+              // const SizedBox(
+              //   width: 50,
+              // ),
+              Padding(
+                padding: const EdgeInsets.only(top: 15),
+                child: Row(
+                  children: [
+                    Text(
+                      informationCourseModel.date,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      'تاريخ الدورة',
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    const Icon(
+                      Icons.watch_later_outlined,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          padding: const EdgeInsets.only(
+            left: 15,
+            right: 15,
+            top: 40,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -172,7 +178,11 @@ class InformationOfCourseWidget extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.only(
+            top: 10,
+            left: 15,
+            right: 15,
+          ),
           child: Text(
             informationCourseModel.about,
             textAlign: TextAlign.end,
@@ -180,7 +190,11 @@ class InformationOfCourseWidget extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          padding: const EdgeInsets.only(
+            left: 15,
+            right: 15,
+            top: 40,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -193,7 +207,11 @@ class InformationOfCourseWidget extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.only(
+            left: 15,
+            right: 15,
+            top: 10,
+          ),
           child: Text(informationCourseModel.goole,
               textAlign: TextAlign.end,
               style: Theme.of(context).textTheme.bodyMedium),
@@ -202,8 +220,7 @@ class InformationOfCourseWidget extends StatelessWidget {
           width: 428,
           height: 300,
           decoration: BoxDecoration(
-              image:
-                  DecorationImage(image: AssetImage(imageMeneger.logo22))),
+              image: DecorationImage(image: AssetImage(imageMeneger.logo22))),
         ),
       ],
     );
