@@ -38,7 +38,10 @@ class CatogreActivitesHomeWidget extends StatelessWidget {
               child: Text(
                 title,
                 textAlign: TextAlign.end,
-                style: Theme.of(context).textTheme.bodyLarge,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyLarge
+                    ?.copyWith(fontSize: 14),
               ),
             ),
             Padding(
@@ -49,7 +52,10 @@ class CatogreActivitesHomeWidget extends StatelessWidget {
                   Text(
                     depart,
                     textAlign: TextAlign.end,
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 12),
                   ),
                 ],
               ),

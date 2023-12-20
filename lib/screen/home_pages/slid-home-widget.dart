@@ -28,16 +28,11 @@ class SlidHomeWidget extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 10, top: 20),
                   child: Text("مرحباً",
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyMedium
-                          ?.copyWith(color: Colors.white)
-                      //  TextStyle(
-                      //   color: MyColors.whiteColor,
-                      //   fontFamily: 'cairo',
-                      //   fontSize: 12,
-                      //   fontWeight: FontWeight.w400,
-                      // ),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: Colors.white,
+                            fontSize: 12,
+                          )
+                    
                       ),
                 ),
                 Padding(
@@ -47,12 +42,6 @@ class SlidHomeWidget extends StatelessWidget {
                           .textTheme
                           .headlineLarge
                           ?.copyWith(color: Colors.white)
-                      //  TextStyle(
-                      //   color: MyColors.whiteColor,
-                      //   fontFamily: 'cairo',
-                      //   fontSize: 14,
-                      //   fontWeight: FontWeight.w600,
-                      // ),
                       ),
                 ),
                 Padding(
@@ -62,12 +51,6 @@ class SlidHomeWidget extends StatelessWidget {
                           .textTheme
                           .bodyLarge
                           ?.copyWith(color: Colors.white, fontSize: 16)
-                      // TextStyle(
-                      //   color: MyColors.whiteColor,
-                      //   fontFamily: 'cairo',
-                      //   fontSize: 16,
-                      //   fontWeight: FontWeight.bold,
-                      // ),
                       ),
                 ),
               ],

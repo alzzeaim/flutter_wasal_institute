@@ -77,7 +77,7 @@ class _DetailsActivitiesAndEventsState
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium
-                                    ?.copyWith(fontSize: 12)),
+                                    ?.copyWith(fontSize: 14)),
                           ),
                         ],
                       ),

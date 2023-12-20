@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import '../../constant/colors.dart';
 import '../../constant/text.dart';
 import '../../widget/AppBar/app_bar_widget.dart';
-import '../home_pages/home_firist_page.dart';
 
 class DetailsOfOffersAndSurprises extends StatefulWidget {
   const DetailsOfOffersAndSurprises({super.key});
@@ -21,7 +20,8 @@ class _DetailsOfOffersAndSurprisesState
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: MyColors.MyBackGround,
-      appBar: AppBarWidget.appBarWidgetTitle(cont: context,
+      appBar: AppBarWidget.appBarWidgetTitle(
+        cont: context,
         Title: "العروض والمفاجأة",
         backPage: () {
           Get.back();
@@ -32,7 +32,8 @@ class _DetailsOfOffersAndSurprisesState
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                 width: double.infinity,
                 height: 300,
                 decoration: BoxDecoration(
@@ -42,11 +43,12 @@ class _DetailsOfOffersAndSurprisesState
                         image: AssetImage(imageMeneger.cam2),
                         fit: BoxFit.cover)),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                 width: double.infinity,
                 decoration: BoxDecoration(
                     color: MyColors.search_backgraund,
@@ -58,14 +60,7 @@ class _DetailsOfOffersAndSurprisesState
                           vertical: 15, horizontal: 10),
                       child: Text(MyText.splash3,
                           textAlign: TextAlign.end,
-                          style: Theme.of(context).textTheme.titleLarge
-                          // TextStyle(
-                          //   color: MyColors.black_color,
-                          //   fontFamily: 'cairo',
-                          //   fontSize: 16,
-                          //   fontWeight: FontWeight.w600,
-                          // ),
-                          ),
+                          style: Theme.of(context).textTheme.titleLarge),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
@@ -79,9 +74,7 @@ class _DetailsOfOffersAndSurprisesState
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium
-                                    ?.copyWith(fontSize: 12)
-                                
-                                ),
+                                    ?.copyWith(fontSize: 14)),
                           ),
                         ],
                       ),

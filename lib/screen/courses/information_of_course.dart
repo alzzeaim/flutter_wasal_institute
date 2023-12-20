@@ -40,18 +40,27 @@ class InformationOfCourseWidget extends StatelessWidget {
                   children: [
                     Text(
                       " ر.ي",
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     Text(
                       informationCourseModel.costs,
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       width: 5,
                     ),
                     Text(
                       'سعرالدورة',
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       width: 5,
@@ -71,18 +80,27 @@ class InformationOfCourseWidget extends StatelessWidget {
                 children: [
                   Text(
                     " ساعة",
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 12),
                   ),
                   Text(
                     informationCourseModel.duration,
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 12),
                   ),
                   const SizedBox(
                     width: 5,
                   ),
                   Text(
                     'مدة الدورة',
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 12),
                   ),
                   const SizedBox(
                     width: 5,
@@ -108,14 +126,20 @@ class InformationOfCourseWidget extends StatelessWidget {
                   children: [
                     Text(
                       informationCourseModel.time,
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       width: 5,
                     ),
                     Text(
                       'دوام الدورة',
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       width: 5,
@@ -137,14 +161,20 @@ class InformationOfCourseWidget extends StatelessWidget {
                   children: [
                     Text(
                       informationCourseModel.date,
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       width: 5,
                     ),
                     Text(
                       'تاريخ الدورة',
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(fontSize: 12),
                     ),
                     const SizedBox(
                       width: 5,
@@ -162,8 +192,8 @@ class InformationOfCourseWidget extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(
-            left: 15,
-            right: 15,
+            left: 20,
+            right: 20,
             top: 40,
           ),
           child: Row(
@@ -172,7 +202,10 @@ class InformationOfCourseWidget extends StatelessWidget {
               Text(
                 MyText.textAboutCourse,
                 textAlign: TextAlign.end,
-                style: Theme.of(context).textTheme.headlineLarge,
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineLarge
+                    ?.copyWith(fontSize: 16),
               ),
             ],
           ),
@@ -180,19 +213,20 @@ class InformationOfCourseWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(
             top: 10,
-            left: 15,
-            right: 15,
+            left: 20,
+            right: 20,
           ),
           child: Text(
             informationCourseModel.about,
             textAlign: TextAlign.end,
-            style: Theme.of(context).textTheme.bodyMedium,
+            style:
+                Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 14),
           ),
         ),
         Padding(
           padding: const EdgeInsets.only(
-            left: 15,
-            right: 15,
+            left: 20,
+            right: 20,
             top: 40,
           ),
           child: Row(
@@ -201,20 +235,26 @@ class InformationOfCourseWidget extends StatelessWidget {
               Text(
                 MyText.textAboutCourse2,
                 textAlign: TextAlign.end,
-                style: Theme.of(context).textTheme.headlineLarge,
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineLarge
+                    ?.copyWith(fontSize: 16),
               ),
             ],
           ),
         ),
         Padding(
           padding: const EdgeInsets.only(
-            left: 15,
-            right: 15,
+            left: 20,
+            right: 20,
             top: 10,
           ),
           child: Text(informationCourseModel.goole,
               textAlign: TextAlign.end,
-              style: Theme.of(context).textTheme.bodyMedium),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium
+                  ?.copyWith(fontSize: 14)),
         ),
         Container(
           width: 428,

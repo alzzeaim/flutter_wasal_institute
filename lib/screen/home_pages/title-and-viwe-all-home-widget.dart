@@ -9,7 +9,8 @@ class TitleAndViweAllHomeWidget extends StatelessWidget {
   TitleAndViweAllHomeWidget({
     super.key,
     required this.title,
-    required this.nextPage, TextStyle? style,
+    required this.nextPage,
+    TextStyle? style,
   });
 
   @override
@@ -41,12 +42,19 @@ class TitleAndViweAllHomeWidget extends StatelessWidget {
                       color: MyColors.black_halufe_Color,
                     ),
                     Text("عرض الكل",
-                        style: Theme.of(context).textTheme.bodyMedium),
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium
+                            ?.copyWith(fontSize: 12)),
                   ]),
             ),
           ),
           const Spacer(),
-          Text(title, style: Theme.of(context).textTheme.bodyLarge),
+          Text(title,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyLarge
+                  ?.copyWith(fontSize: 16)),
         ],
       ),
     );

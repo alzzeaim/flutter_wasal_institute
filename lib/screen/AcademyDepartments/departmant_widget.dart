@@ -43,18 +43,37 @@ class DepartmantWidget extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const Text("دورة"),
-                  Text(numberOfCourses),
+                  Text(
+                    "دورة",
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 12),
+                  ),
+                  Text(
+                    numberOfCourses,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 14),
+                  ),
                   const SizedBox(
                     width: 5,
                   ),
                   Icon(
                     Icons.cast_for_education_rounded,
+                    size: 20,
                     color: MyColors.black_halufe_Color,
                   ),
                   // FaIcon(FontAwesomeIcons.book)
                   const Spacer(),
-                  Text(title)
+                  Text(
+                    title,
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyMedium
+                        ?.copyWith(fontSize: 14),
+                  )
                 ],
               ),
             )

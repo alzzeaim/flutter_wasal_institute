@@ -7,7 +7,7 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
   String title;
   String depart;
   String url;
-   ItemOfOfferaAndSurpriseWidget({
+  ItemOfOfferaAndSurpriseWidget({
     super.key,
     required this.title,
     required this.depart,
@@ -18,10 +18,10 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.to(() => DetailsOfOffersAndSurprises());
+        Get.to(() => const DetailsOfOffersAndSurprises());
       },
       child: Container(
-        margin: EdgeInsets.symmetric(
+        margin: const EdgeInsets.symmetric(
           vertical: 10,
           horizontal: 20,
         ),
@@ -36,7 +36,7 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
               width: double.infinity,
               height: 300,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(20),
                       topRight: Radius.circular(20)),
                   image: DecorationImage(
@@ -46,7 +46,10 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
               child: Text(title,
                   textAlign: TextAlign.end,
-                  style: Theme.of(context).textTheme.titleLarge),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge
+                      ?.copyWith(fontSize: 14)),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -66,10 +69,10 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Get.to(() => DetailsOfOffersAndSurprises());
+                Get.to(() => const DetailsOfOffersAndSurprises());
               },
               child: Container(
-                margin: EdgeInsets.only(top: 25, bottom: 20),
+                margin: const EdgeInsets.only(top: 25, bottom: 20),
                 width: 348,
                 height: 40,
                 decoration: BoxDecoration(
@@ -79,7 +82,7 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.chevron_left_rounded,
                       color: MyColors.whiteColor,
                       size: 24,
@@ -88,7 +91,7 @@ class ItemOfOfferaAndSurpriseWidget extends StatelessWidget {
                         style: Theme.of(context)
                             .textTheme
                             .bodyLarge
-                            ?.copyWith(color: Colors.white)),
+                            ?.copyWith(color: Colors.white, fontSize: 14)),
                   ],
                 ),
               ),

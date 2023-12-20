@@ -75,7 +75,6 @@ class _HomeFristPageState extends State<HomeFristPage> {
                 Get.to(() => const CoursesPage());
               },
               title: "الكورسات الجديدة",
-              style: Theme.of(context).textTheme.headlineLarge,
             ),
             SizedBox(
               height: 450,
@@ -149,7 +148,10 @@ class _HomeFristPageState extends State<HomeFristPage> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(MyText.text_Cadre_of_Jats,
-                      style: Theme.of(context).textTheme.headlineLarge),
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineLarge
+                          ?.copyWith(fontSize: 16)),
                 ],
               ),
             ),

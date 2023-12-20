@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../constant/colors.dart';
 
-
 class ListTileMenu extends StatelessWidget {
   IconData iconMenu;
   final titleitem_menu;
@@ -17,7 +16,7 @@ class ListTileMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       trailing: Padding(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           right: 20,
           top: 5,
         ),
@@ -29,8 +28,7 @@ class ListTileMenu extends StatelessWidget {
       ),
       title: Text(titleitem_menu,
           textAlign: TextAlign.right,
-          style: Theme.of(context).textTheme.bodyLarge
-          ),
+          style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontSize: 14)),
       onTap: () {
         movePage();
       },

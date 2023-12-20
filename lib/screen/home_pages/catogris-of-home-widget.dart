@@ -42,7 +42,7 @@ class CatogrisOfHomeWidget extends StatelessWidget {
                       maxLines: 2,
                       style: const TextStyle(
                         fontFamily: 'Cairo',
-                        fontSize: 10,
+                        fontSize: 14,
                         color: Colors.black,
                         fontWeight: FontWeight.normal,
                       )

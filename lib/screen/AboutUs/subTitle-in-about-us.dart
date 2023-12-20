@@ -10,7 +10,7 @@ class SubTitleInAboutUswidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10, right: 10, bottom: 15),
+      padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -20,9 +20,7 @@ class SubTitleInAboutUswidget extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .bodyMedium
-                    ?.copyWith(fontSize: 12)
-
-                ),
+                    ?.copyWith(fontSize: 14)),
           ),
         ],
       ),

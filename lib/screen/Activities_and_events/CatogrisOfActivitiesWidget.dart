@@ -54,7 +54,10 @@ class CatogrisOfActivitiesWidget extends StatelessWidget {
                   Expanded(
                     child: Text(date,
                         textAlign: TextAlign.end,
-                        style: Theme.of(context).textTheme.bodyMedium),
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium
+                            ?.copyWith(fontSize: 14)),
                   ),
                 ],
               ),

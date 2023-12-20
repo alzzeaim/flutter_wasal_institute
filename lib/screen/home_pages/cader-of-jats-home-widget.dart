@@ -30,7 +30,7 @@ class CaderOfJatsHomeWidget extends StatelessWidget {
             ? null
             : GestureDetector(
                 onTap: () {
-                  Get.to(() => CaderPage());
+                  Get.to(() => const CaderPage());
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -48,7 +48,7 @@ class CaderOfJatsHomeWidget extends StatelessWidget {
                     style: Theme.of(context)
                         .textTheme
                         .bodyLarge
-                        ?.copyWith(color: MyColors.whiteColor),
+                        ?.copyWith(color: MyColors.whiteColor, fontSize: 14),
                   )),
                 ),
               ),
@@ -56,4 +56,3 @@ class CaderOfJatsHomeWidget extends StatelessWidget {
     );
   }
 }
- 

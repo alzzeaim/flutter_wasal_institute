@@ -52,7 +52,11 @@ class ContactInformationWidget extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("04 422936", style: Theme.of(context).textTheme.bodyLarge
+              Text("04 422936",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyLarge
+                      ?.copyWith(fontSize: 14)
                   // TextStyle(color: MyColors.black_halufe_Color),
                   ),
               const SizedBox(
@@ -64,7 +68,10 @@ class ContactInformationWidget extends StatelessWidget {
                 width: 20,
               ),
               Text("+967 775171978",
-                  style: Theme.of(context).textTheme.bodyLarge
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyLarge
+                      ?.copyWith(fontSize: 14)
                   // TextStyle(color: MyColors.black_halufe_Color),
                   ),
               const SizedBox(
@@ -81,7 +88,10 @@ class ContactInformationWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("alzzeaim7751@gmail.com",
-                  style: Theme.of(context).textTheme.bodyLarge
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyLarge
+                      ?.copyWith(fontSize: 14)
                   // TextStyle(color: MyColors.black_halufe_Color),
                   ),
               const SizedBox(
@@ -92,12 +102,15 @@ class ContactInformationWidget extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(5.0),
+          padding: const EdgeInsets.only(bottom: 30),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("www.jats_institut.com",
-                  style: Theme.of(context).textTheme.bodyLarge
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyLarge
+                      ?.copyWith(fontSize: 14   )
                   // TextStyle(color: MyColors.black_halufe_Color),
                   ),
               const SizedBox(
